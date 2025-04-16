@@ -1,13 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Login Authentication System</h1>
-    <a href="{{url_for('login')}}">login</a><br>
-    <a href="{{url_for('signup')}}">signup</a><br> 
+    <div class="form-group">
+        <a href="{{url_for('login')}}" class="btn btn-primary">Login</a>
+        <a href="{{url_for('signup')}}" class="btn btn-dark">SignUp</a>
+    </div>
+    
+    <div class="containerHome">
+        <h1 id="heading">Empowering Communities, Preventing Crime</h1>
+        <h4 id="subheading">Enhancing safety with real-time crime analysis and reporting</h4>
+        <a href="{{ url_for('crime_map') }}">
+            <button style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                View Crime Heatmap
+            </button>
+        </a>
+        
+    </div>
 </body>
 </html>
