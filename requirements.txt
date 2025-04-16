@@ -1,0 +1,9 @@
+pip install flask 
+pip install flask_wtf , wtforms , wtforms.validators , bcrypt
+from flask_mysqldb import MySQL
+import cv2
+from tensorflow.keras.models import load_model
+import numpy as np
+import time , telepot ,pytz , requests 
+from datetime import datetime
+from collections import deque
