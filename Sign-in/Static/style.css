@@ -1,0 +1,215 @@
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background: #343a40;
+}
+
+.logo:hover {
+    background: #23272b;
+    text-decoration: none;
+    color: white;
+}
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1E1E1E;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.containerHome {
+    width: 100%;
+    max-width: 600px;
+    min-height: 400px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+.form-group {
+    margin-top: 10px;
+    margin-right:10px;
+    margin-bottom: 15px;
+    gap:4px;
+    display: flex;
+    justify-content:flex-end;
+    /* flex-direction: column; */
+}
+
+#email{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 2.8rem;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#password{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#acc{
+    margin-top: 1rem;
+}
+
+#name{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 2.7rem;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#emailSignUp{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 2.8rem;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#passwordSignUp{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 1.1rem;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-dark {
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    margin-top:1rem;
+}
+
+.btn-dark:hover {
+    background-color: #23272b;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    margin-top:1rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Alert Styles */
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Dashboard Styles */
+.dashboard-info {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.dashboard-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard-info li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#heading{
+    margin-top: 100px;
+}
+#subheading{
+    margin-top: 20px;
+    text-align: center;
+    color: grey;
+}
